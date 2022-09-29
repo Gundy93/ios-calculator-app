@@ -48,6 +48,7 @@ final class CalculatorViewController: UIViewController {
         }
         enteredOperatorLabel.text = nil
         enteredNumberLabel.resetToZero()
+        formulaScrollView.showsVerticalScrollIndicator = false
     }
     
     @IBAction private func resetToInitialState() {
@@ -152,7 +153,8 @@ final class CalculatorViewController: UIViewController {
     }
     
     private func scrollToBottom() {
-        formulaScrollView.setContentOffset(CGPoint(x: .zero, y: formulaScrollView.frame.height), animated: false)
+        formulaScrollView.layoutIfNeeded()
+        formulaScrollView.setContentOffset(CGPoint(x: .zero, y: formulaScrollView.contentSize.height - formulaScrollView.bounds.height), animated: true)
     }
     
     @IBAction private func touchUpEqualButton(sender: UIButton) {
@@ -220,4 +222,3 @@ final class CalculatorViewController: UIViewController {
         return numberFormatter
     }
 }
-
