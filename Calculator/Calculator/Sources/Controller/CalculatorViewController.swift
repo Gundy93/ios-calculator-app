@@ -152,8 +152,7 @@ final class CalculatorViewController: UIViewController {
     }
     
     private func scrollToBottom() {
-        let bottomPoint: CGPoint = .init(x: .zero, y: formulaScrollView.contentSize.height)
-        formulaScrollView.setContentOffset(bottomPoint, animated: false)
+        formulaScrollView.setContentOffset(CGPoint(x: .zero, y: formulaScrollView.frame.height), animated: false)
     }
     
     @IBAction private func touchUpEqualButton(sender: UIButton) {
