@@ -58,7 +58,7 @@ final class CalculatorViewController: UIViewController {
     }
     
     @IBAction private func touchUpSignSwitchButton(sender: UIButton) {
-        guard !isResultOfFormula || enteredNumberLabel.text != Constants.Text.zero else { return }
+        guard !isResultOfFormula, !enteredNumberLabel.isZero else { return }
         enteredNumberLabel.switchSign()
     }
     
@@ -119,7 +119,7 @@ final class CalculatorViewController: UIViewController {
     
     @IBAction private func touchUpOperatorButton(_ sender: UIButton) {
         guard !isResultOfFormula else { return }
-        if enteredNumberLabel.isZero, isInputtedZero {
+        if enteredNumberLabel.isZero, !isInputtedZero {
             enteredOperatorLabel.text = sender.currentTitle
             return
         }
@@ -135,6 +135,7 @@ final class CalculatorViewController: UIViewController {
         appendToFormulaLog()
         verticalFormulaStackView.addArrangedSubview(formulaStackView)
         scrollToBottom()
+        isInputtedZero = false
     }
     
     private func canMakingFormulaStackView() -> Bool {
