@@ -179,6 +179,7 @@ final class CalculatorViewController: UIViewController {
     private func makeResultOfFormula(text: String) {
         enteredNumberLabel.text = text
         isResultOfFormula = true
+        enteredOperatorLabel.text = nil
         enteredNumberLabel.text = formatCalculatedResult()
     }
     
