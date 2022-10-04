@@ -12,7 +12,7 @@ enum Operator: Character, CaseIterable, CalculateItem {
     case multifly = "×"
     
     func calculate(lhs: Double, rhs: Double) throws -> Double {
-        var result: Double = lhs
+        var result: Double
         switch self {
         case .add:
             result = add(lhs: lhs, rhs: rhs)

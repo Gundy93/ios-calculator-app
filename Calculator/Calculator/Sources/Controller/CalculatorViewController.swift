@@ -30,10 +30,6 @@ final class CalculatorViewController: UIViewController {
     
     @IBOutlet weak private var enteredOperatorLabel: UILabel!
     @IBOutlet weak private var enteredNumberLabel: CalculatorNumberLabel!
-    @IBOutlet private var operatorButtons: [UIButton]!
-    @IBOutlet weak private var zeroButton: UIButton!
-    @IBOutlet weak private var doubleZeroButton: UIButton!
-    @IBOutlet weak private var dotButton: UIButton!
     @IBOutlet weak private var verticalFormulaStackView: UIStackView!
     @IBOutlet weak private var formulaScrollView: UIScrollView!
     
@@ -72,10 +68,10 @@ final class CalculatorViewController: UIViewController {
         guard let text = enteredNumberLabel.text,
               let number = sender.currentTitle,
               !isResultOfFormula else { return }
-        enterNumber(sender: sender, current: text, entered: number)
+        enterNumber(current: text, entered: number)
     }
     
-    private func enterNumber(sender: UIButton, current text: String, entered operand: String) {
+    private func enterNumber(current text: String, entered operand: String) {
         if enteredNumberLabel.isZero {
             enteredNumberLabel.text = operand
         } else {
@@ -148,7 +144,6 @@ final class CalculatorViewController: UIViewController {
     
     private func appendToFormulaLog() {
         formulaLog.append(contentsOf: [enteredOperatorLabel.text, enteredNumberLabel.text])
-        enteredOperatorLabel.text = nil
         enteredNumberLabel.resetToZero()
     }
     

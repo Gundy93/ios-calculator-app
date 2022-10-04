@@ -364,17 +364,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dotButton" destination="h8q-5h-bnb" id="1Th-lP-pmZ"/>
-                        <outlet property="doubleZeroButton" destination="sH6-8l-kje" id="Fld-K7-LXc"/>
                         <outlet property="enteredNumberLabel" destination="Lwz-OF-XHD" id="ZpY-mU-Tb3"/>
                         <outlet property="enteredOperatorLabel" destination="HPC-iy-qdm" id="m4F-Gj-CQ5"/>
                         <outlet property="formulaScrollView" destination="BOT-7g-vxv" id="g3H-Lt-ipX"/>
                         <outlet property="verticalFormulaStackView" destination="XRe-QE-UJf" id="Nsg-qT-oex"/>
-                        <outlet property="zeroButton" destination="mSz-Y3-r5Z" id="MLo-B5-02l"/>
-                        <outletCollection property="operatorButtons" destination="sbh-wC-koF" collectionClass="NSMutableArray" id="6Ks-Pv-uB4"/>
-                        <outletCollection property="operatorButtons" destination="nTe-Sn-Pvd" collectionClass="NSMutableArray" id="7aJ-NU-Hgu"/>
-                        <outletCollection property="operatorButtons" destination="Tfz-eM-jll" collectionClass="NSMutableArray" id="wwZ-tI-xeu"/>
-                        <outletCollection property="operatorButtons" destination="811-Pz-An6" collectionClass="NSMutableArray" id="DWG-fV-xR9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
