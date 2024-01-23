@@ -19,6 +19,7 @@
 		BF96C90C2B602B0800E5C576 /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C90B2B602B0800E5C576 /* Formula.swift */; };
 		BF96C90E2B602CF000E5C576 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C90D2B602CF000E5C576 /* ExpressionParser.swift */; };
 		BF96C9132B6032FE00E5C576 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C9122B6032FE00E5C576 /* Calculator.swift */; };
+		BF96C9152B603B4500E5C576 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C9142B603B4500E5C576 /* CalculatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BF96C90B2B602B0800E5C576 /* Formula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		BF96C90D2B602CF000E5C576 /* ExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParser.swift; sourceTree = "<group>"; };
 		BF96C9122B6032FE00E5C576 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		BF96C9142B603B4500E5C576 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				BF96C8ED2B60249F00E5C576 /* CalculatorApp.swift */,
 				BF96C8FB2B6024EC00E5C576 /* Model */,
+				BF96C9142B603B4500E5C576 /* CalculatorViewModel.swift */,
 				BF96C8EF2B60249F00E5C576 /* ContentView.swift */,
 				BF96C9062B602A1600E5C576 /* Extension */,
 				BF96C8F12B6024A000E5C576 /* Assets.xcassets */,
@@ -180,6 +183,7 @@
 				BF96C8FD2B60253500E5C576 /* Queuable.swift in Sources */,
 				BF96C90E2B602CF000E5C576 /* ExpressionParser.swift in Sources */,
 				BF96C8F02B60249F00E5C576 /* ContentView.swift in Sources */,
+				BF96C9152B603B4500E5C576 /* CalculatorViewModel.swift in Sources */,
 				BF96C9132B6032FE00E5C576 /* Calculator.swift in Sources */,
 				BF96C9052B6027B300E5C576 /* Operator.swift in Sources */,
 				BF96C8FF2B6025B000E5C576 /* CalculatorItemQueue.swift in Sources */,
