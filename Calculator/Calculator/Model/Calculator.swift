@@ -25,13 +25,13 @@ struct Calculator {
     }
     
     mutating func inputDot() {
-        guard containsDot else { return }
+        guard containsDot == false else { return }
         
         if absoluteValue.isEmpty {
             absoluteValue += "0"
         }
         
-        containsDot.toggle()
+        containsDot = true
         absoluteValue += "."
     }
     
