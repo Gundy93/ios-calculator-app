@@ -13,6 +13,7 @@
 		BF96C8F52B6024A000E5C576 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF96C8F42B6024A000E5C576 /* Preview Assets.xcassets */; };
 		BF96C8FD2B60253500E5C576 /* Queuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C8FC2B60253500E5C576 /* Queuable.swift */; };
 		BF96C8FF2B6025B000E5C576 /* CalculatorItemQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C8FE2B6025B000E5C576 /* CalculatorItemQueue.swift */; };
+		BF96C9052B6027B300E5C576 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF96C9042B6027B300E5C576 /* Operator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BF96C8F42B6024A000E5C576 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF96C8FC2B60253500E5C576 /* Queuable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queuable.swift; sourceTree = "<group>"; };
 		BF96C8FE2B6025B000E5C576 /* CalculatorItemQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorItemQueue.swift; sourceTree = "<group>"; };
+		BF96C9042B6027B300E5C576 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				BF96C8FC2B60253500E5C576 /* Queuable.swift */,
 				BF96C8FE2B6025B000E5C576 /* CalculatorItemQueue.swift */,
+				BF96C9042B6027B300E5C576 /* Operator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				BF96C8FD2B60253500E5C576 /* Queuable.swift in Sources */,
 				BF96C8F02B60249F00E5C576 /* ContentView.swift in Sources */,
+				BF96C9052B6027B300E5C576 /* Operator.swift in Sources */,
 				BF96C8FF2B6025B000E5C576 /* CalculatorItemQueue.swift in Sources */,
 				BF96C8EE2B60249F00E5C576 /* CalculatorApp.swift in Sources */,
 			);
